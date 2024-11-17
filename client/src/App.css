@@ -1,0 +1,359 @@
+.HomePageWapper{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.formWrapper{
+  background: #282a36;
+  padding: 20px;
+  border-radius: 15px;
+  width: 400px;
+  max-width: 90%;
+}
+
+.inputGroup{
+  display: flex;
+  flex-direction: column;
+}
+
+.inputBox{
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  margin-bottom: 14px;
+  background-color: #eee;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.btn{
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.joinBtn{
+  background-color: #145b30;
+  width: 100px;
+  margin-left: auto;
+  font-weight: bold;
+}
+
+.joinBtn:hover{
+  background-color: #2b824e;
+}
+
+.createInfo{
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.createNewBtn{
+  color: #4aed88;
+  text-decoration: none;
+  border-bottom: 1px solid #4aed88;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.createNewBtn:hover{
+  color: #368654; 
+  border-color: #368654;
+}
+
+.mainWrap{
+  display: grid;
+  grid-template-columns: 1fr 330px;
+  height: 100vh;
+}
+
+.aside{
+  background: rgb(28, 30, 41);
+  padding: 16px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.asideInner{
+  flex: 1;
+}
+
+.ClientList{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.client {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+}
+
+.leaveBtn {
+  margin-top: 20px;
+  background-color: #2b824e;
+}
+
+.CodeMirror{
+  font-size: 20px;
+  min-height: 100vh
+}
+
+.video-call-Container{
+  padding: 0;
+}
+
+.User-Client-Video{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.video1{
+  border: 5px solid #368654;
+  border-radius: 10px;
+}
+.connectedInfo{
+  padding: 0;
+  margin: 0;
+  margin-top: 5px;
+  border-top: 2px solid #2b824e ;
+  display: flex;
+  justify-content: center;
+}
+.video-call-Container{
+  padding-bottom: 10px;
+}
+.video-calling-area{
+  border-bottom: 2px solid #2b824e;
+}
+.Stream-call-btn{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3px;
+  gap: 150px;
+  margin-bottom: 3px;
+}
+
+
+.file-transfer-area{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#file-transfer{
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+}
+.file-transfer-input{
+  display: none;
+}
+.file-transfer-label{
+  display: flex;
+  text-align: center;
+  height: 100px;
+  width: 150px;
+  border-radius: 6px;
+  border: 1px dashed #fff;
+  display: block;
+}
+
+.file-transfer-label:hover{
+  color: #368654;
+  border: 1px dashed #368654;
+}
+
+.file-transfer-btn{
+  margin-top: 30px;
+  height: 30px;
+  border-radius: 8px;
+  border: none;
+  color: #2b824e;
+  font-weight: bold;
+}
+
+.file-transfer-btn:hover{
+  color: #fff;
+  background-color: #368654;
+}
+
+.mainWrap{
+  max-width: 100vw;
+}
+
+
+
+/*--------------------FileTerminal Css---------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Cinzel&family=Handjet:wght@200&family=Satisfy&family=Tiro+Devanagari+Hindi:ital@0;1&display=swap');
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.ace-github .ace_marker-layer .ace_active-line {
+  background: #ffffff17 !important;
+  padding: 8px;
+  border-radius: 2px;
+}
+
+.ace_selection {
+  background-color: #666666d8 !important;
+  color: white !important;
+}
+.terminalClass{
+  min-width: 80vw;
+}
+#realtimeEditor{
+  min-height: 80vh;
+}
+/* .modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000; /* Ensure modal is above other content */
+
+
+/* .modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+ /* Ensure overlay is below modal */
+
+/* .code-explainer {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.explanation-content {
+  margin-top: 20px;
+}
+
+.explanation-content h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Style for bullet points */
+/* .explanation-content ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.explanation-content ul li {
+  margin-bottom: 10px;
+}  */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.spinner {
+  width: 3em;
+  height: 3em;
+  cursor: not-allowed;
+  border-radius: 50%;
+  border: 2px solid #444;
+  box-shadow: -10px -10px 10px #6359f8, 0px -10px 10px 0px #9c32e2, 10px -10px 10px #f36896, 10px 0 10px #ff0b0b, 10px 10px 10px 0px#ff5500, 0 10px 10px 0px #ff9500, -10px 10px 10px 0px #ffb700;
+  animation: rot55 0.7s linear infinite;
+}
+
+.spinnerin {
+  border: 2px solid #444;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes rot55 {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+#bottone1 {
+ padding-left: 12px;
+ padding-right: 12px;
+ padding-top: 8px;
+ padding-bottom:8px;
+  border-radius: 9px;
+  background: #d5f365;
+  border: none;
+  font-family: inherit;
+  text-align: center;
+  color:black;
+  cursor: pointer;
+  transition: 0.4s;
+ }
+ 
+ #bottone1:hover {
+  box-shadow: 7px 5px 56px -14px #C3D900;
+ }
+ 
+ #bottone1:active {
+  transform: scale(0.97);
+  box-shadow: 7px 5px 56px -10px #C3D900;
+ }
+
+ /* .editing-terminal-area{
+  min-height: calc(100vh - 20px);
+ } */
+
+
+.CodeMirror{
+  font-size: 20px;
+  min-height: 100vh
+}

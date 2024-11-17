@@ -1,0 +1,5 @@
+import { io } from 'socket.io-client'
+
+const socketFileTerminal = io('http://localhost:9000')
+
+export default socketFileTerminal;
